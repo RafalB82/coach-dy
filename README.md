@@ -123,6 +123,20 @@ Guidelines:
 - Preserve the distinction between "Dorian said" and "research shows".
 - Keep the tone practical and conservative.
 
+## Repository metadata
+
+The GitHub About description and topics are versioned in [`repo-about.json`](repo-about.json) and applied with:
+
+```bash
+make about
+```
+
+Preview the payload without applying it:
+
+```bash
+make about-dry
+```
+
 ## License
 
 MIT for the original work in this repository. Quoted podcast excerpts and research abstracts remain the property of their respective owners and are used for commentary/education. See [`NOTICE.md`](NOTICE.md).

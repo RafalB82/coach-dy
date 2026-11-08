@@ -6,6 +6,12 @@ All notable changes to this repository.
 
 ### Added
 
+- Bilingual core: English and Polish versions of `SKILL`, the knowledge base,
+  the evidence map, and the structured data.
+- `SKILL.pl.md` — Polish entry point and documentation.
+- `references/knowledge_base_dy.pl.md`, `references/evidence_base.pl.md`,
+  `references/knowledge_base_dy.pl.json` — Polish core files.
+- Language table in both READMEs.
 - `repo-about.json` — versioned GitHub About metadata (description, homepage,
   topics).
 - `scripts/set_repo_about.py` — validates and applies the About metadata with

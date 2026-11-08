@@ -33,6 +33,20 @@ Zachowuje rdzeń metody Doriana:
 | `scripts/validate.py` | Walidacja repo: JSON, frontmatter, wymagane pliki, brak plików multimedialnych |
 | `.github/workflows/validate.yml` | CI uruchamiające walidację przy push i PR |
 
+## Języki
+
+Rdzeń jest dwujęzyczny. Domyślnie używaj plików angielskich; polskie odpowiedniki są dostępne dla każdego czytelnego pliku rdzenia.
+
+| Treść | Angielski | Polski |
+|---|---|---|
+| Instrukcje skilla | `SKILL.md` | `SKILL.pl.md` |
+| Baza wiedzy | `references/knowledge_base_dy.md` | `references/knowledge_base_dy.pl.md` |
+| Mapa dowodów | `references/evidence_base.md` | `references/evidence_base.pl.md` |
+| Dane strukturalne | `references/knowledge_base_dy.json` | `references/knowledge_base_dy.pl.json` |
+| Dokumentacja repo | `README.md` | `README.pl.md` |
+
+Loader OpenCode czyta `SKILL.md`. Plik polski jest dokumentacją i alternatywnym punktem wejścia; nie jest ładowany automatycznie.
+
 ## Status dowodów w skrócie
 
 | Twierdzenie | Werdykt |

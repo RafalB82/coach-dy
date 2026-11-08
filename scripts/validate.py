@@ -3,8 +3,8 @@
 
 Checks:
 - required files exist
-- JSON parses and has expected top-level keys/counts
-- SKILL.md has valid YAML frontmatter with name and description
+- both JSON files parse and have expected top-level keys/counts
+- SKILL.md and SKILL.pl.md have valid YAML frontmatter
 - relative markdown links to local files resolve
 - no audio/video/transcript files are committed
 
@@ -23,14 +23,18 @@ ROOT = Path(__file__).resolve().parent.parent
 
 REQUIRED_FILES = [
     "SKILL.md",
+    "SKILL.pl.md",
     "README.md",
     "README.pl.md",
     "LICENSE",
     "NOTICE.md",
     "repo-about.json",
     "references/knowledge_base_dy.md",
+    "references/knowledge_base_dy.pl.md",
     "references/knowledge_base_dy.json",
+    "references/knowledge_base_dy.pl.json",
     "references/evidence_base.md",
+    "references/evidence_base.pl.md",
     "agents/openai.yaml",
 ]
 
@@ -47,29 +51,42 @@ def check_required_files() -> None:
 
 
 def check_json() -> None:
-    path = ROOT / "references" / "knowledge_base_dy.json"
-    if not path.is_file():
-        return
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        errors.append(f"invalid JSON in {path.relative_to(ROOT)}: {exc}")
-        return
-
     expected = {
         "principles": 20,
         "numbers": 12,
         "evidence_map": 12,
     }
-    for key, count in expected.items():
-        if key not in data:
-            errors.append(f"JSON missing key: {key}")
-        elif len(data[key]) != count:
-            warnings.append(f"JSON '{key}' has {len(data[key])} entries, expected {count}")
+    for rel in ("references/knowledge_base_dy.json", "references/knowledge_base_dy.pl.json"):
+        path = ROOT / rel
+        if not path.is_file():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            errors.append(f"invalid JSON in {rel}: {exc}")
+            continue
 
-    for key in ("evidence_base", "evidence_summary", "contextual_optimization", "n_of_1_caveat"):
-        if key not in data:
-            errors.append(f"JSON missing key: {key}")
+        for key, count in expected.items():
+            if key not in data:
+                errors.append(f"{rel}: missing key '{key}'")
+            elif len(data[key]) != count:
+                warnings.append(f"{rel}: '{key}' has {len(data[key])} entries, expected {count}")
+
+        for key in ("evidence_base", "evidence_summary", "contextual_optimization", "n_of_1_caveat"):
+            if key not in data:
+                errors.append(f"{rel}: missing key '{key}'")
+
+        language = data.get("language")
+        if language not in ("en", "pl"):
+            warnings.append(f"{rel}: 'language' should be 'en' or 'pl'")
+        elif rel.endswith(".pl.json") and language != "pl":
+            errors.append(f"{rel}: language is {language!r}, expected 'pl'")
+        elif not rel.endswith(".pl.json") and language != "en":
+            errors.append(f"{rel}: language is {language!r}, expected 'en'")
+
+        evidence = data.get("evidence_base")
+        if isinstance(evidence, str) and not (ROOT / evidence).is_file():
+            errors.append(f"{rel}: evidence_base target does not exist: {evidence}")
 
 
 def check_repo_about() -> None:
@@ -100,24 +117,25 @@ def check_repo_about() -> None:
 
 
 def check_skill_frontmatter() -> None:
-    path = ROOT / "SKILL.md"
-    if not path.is_file():
-        return
-    text = path.read_text(encoding="utf-8")
-    if not text.startswith("---\n"):
-        errors.append("SKILL.md must start with YAML frontmatter (---)")
-        return
-    end = text.find("\n---\n", 4)
-    if end == -1:
-        errors.append("SKILL.md frontmatter is not closed with ---")
-        return
-    frontmatter = text[4:end]
-    if not re.search(r"^name:\s*\S+", frontmatter, re.MULTILINE):
-        errors.append("SKILL.md frontmatter missing 'name'")
-    if not re.search(r"^description:\s*\S+", frontmatter, re.MULTILINE):
-        errors.append("SKILL.md frontmatter missing 'description'")
-    if "name: Coach-DY" not in frontmatter:
-        warnings.append("SKILL.md name is not 'Coach-DY'")
+    for rel in ("SKILL.md", "SKILL.pl.md"):
+        path = ROOT / rel
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        if not text.startswith("---\n"):
+            errors.append(f"{rel} must start with YAML frontmatter (---)")
+            continue
+        end = text.find("\n---\n", 4)
+        if end == -1:
+            errors.append(f"{rel} frontmatter is not closed with ---")
+            continue
+        frontmatter = text[4:end]
+        if not re.search(r"^name:\s*\S+", frontmatter, re.MULTILINE):
+            errors.append(f"{rel} frontmatter missing 'name'")
+        if not re.search(r"^description:\s*\S+", frontmatter, re.MULTILINE):
+            errors.append(f"{rel} frontmatter missing 'description'")
+        if "name: Coach-DY" not in frontmatter:
+            warnings.append(f"{rel} name is not 'Coach-DY'")
 
 
 def check_local_links() -> None:
@@ -163,7 +181,7 @@ def main() -> int:
         print(f"\nFAILED: {len(errors)} error(s)")
         return 1
 
-    print("OK: required files, JSON, frontmatter, links, and media checks passed.")
+    print("OK: bilingual core, JSON, frontmatter, links, and media checks passed.")
     return 0
 
 

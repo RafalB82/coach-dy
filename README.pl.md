@@ -123,6 +123,20 @@ Zasady:
 - Zachowaj rozróżnienie „Dorian powiedział” vs „badania pokazują”.
 - Ton praktyczny i konserwatywny.
 
+## Metadane repozytorium
+
+Opis i tematy w sekcji About są wersjonowane w [`repo-about.json`](repo-about.json) i aplikowane przez:
+
+```bash
+make about
+```
+
+Podgląd bez zastosowania:
+
+```bash
+make about-dry
+```
+
 ## Licencja
 
 MIT dla oryginalnej treści repo. Cytaty z podcastu i abstrakty badań pozostają własnością ich autorów i są używane w celach komentarza/edukacji. Szczegóły: [`NOTICE.md`](NOTICE.md).

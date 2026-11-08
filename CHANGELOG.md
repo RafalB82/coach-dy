@@ -2,6 +2,17 @@
 
 All notable changes to this repository.
 
+## [Unreleased]
+
+### Added
+
+- `repo-about.json` — versioned GitHub About metadata (description, homepage,
+  topics).
+- `scripts/set_repo_about.py` — validates and applies the About metadata with
+  `gh api`; supports `--dry-run`.
+- `make about` / `make about-dry` shortcuts.
+- Repository About section filled with a description and 12 topics.
+
 ## [0.1.0] - 2026-11-08
 
 ### Added

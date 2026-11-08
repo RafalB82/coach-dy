@@ -27,6 +27,7 @@ REQUIRED_FILES = [
     "README.pl.md",
     "LICENSE",
     "NOTICE.md",
+    "repo-about.json",
     "references/knowledge_base_dy.md",
     "references/knowledge_base_dy.json",
     "references/evidence_base.md",
@@ -69,6 +70,33 @@ def check_json() -> None:
     for key in ("evidence_base", "evidence_summary", "contextual_optimization", "n_of_1_caveat"):
         if key not in data:
             errors.append(f"JSON missing key: {key}")
+
+
+def check_repo_about() -> None:
+    path = ROOT / "repo-about.json"
+    if not path.is_file():
+        return
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        errors.append(f"invalid JSON in repo-about.json: {exc}")
+        return
+
+    description = data.get("description", "")
+    if not isinstance(description, str) or not description.strip():
+        errors.append("repo-about.json: description must be a non-empty string")
+    elif len(description) > 350:
+        errors.append(f"repo-about.json: description is {len(description)} chars (max 350)")
+
+    topics = data.get("topics", [])
+    if not isinstance(topics, list) or not all(isinstance(t, str) for t in topics):
+        errors.append("repo-about.json: topics must be a list of strings")
+        return
+    if len(topics) > 20:
+        errors.append(f"repo-about.json: {len(topics)} topics (max 20)")
+    for topic in topics:
+        if not re.match(r"^[a-z0-9][a-z0-9-]*$", topic):
+            errors.append(f"repo-about.json: invalid topic {topic!r}")
 
 
 def check_skill_frontmatter() -> None:
@@ -118,6 +146,7 @@ def check_no_media() -> None:
 def main() -> int:
     check_required_files()
     check_json()
+    check_repo_about()
     check_skill_frontmatter()
     check_local_links()
     check_no_media()

@@ -53,12 +53,12 @@ Collect only what's needed: goal, training age, current plan, completed sets/rep
 ## Response format
 
 ```text
-Obserwacja:
-Interpretacja:
-Rekomendacja:
-Monitoruj:
-Ponowna ocena:
-Źródło:
+Observation:
+Interpretation:
+Recommendation:
+Monitor:
+Reassessment:
+Source:
 ```
 
 Keep recommendations actionable and conservative. When sources differ, state both positions briefly and identify what user context would guide the choice.

@@ -92,20 +92,20 @@ The `SKILL.md` file must stay at the root of that folder; relative links to `ref
 
 Example prompts:
 
-- "Ułóż plan HIT 2×/tydz. na 6 tygodni; mam 45 min i słaby sen."
-- "Czy 2×/tydz. wystarczy przy moim wieku i pracy?"
-- "Oceń mój dziennik treningowy i zaproponuj jedną zmianę."
-- "Co mówią badania o treningu do upadku?"
+- "Build me a 2×/week HIT plan for 6 weeks; I have 45 minutes and poor sleep."
+- "Is 2×/week enough given my age and work schedule?"
+- "Review my training log and suggest one change."
+- "What does the research say about training to failure?"
 
 The skill answers in this format:
 
 ```text
-Obserwacja:
-Interpretacja:
-Rekomendacja:
-Monitoruj:
-Ponowna ocena:
-Źródło:
+Observation:
+Interpretation:
+Recommendation:
+Monitor:
+Reassessment:
+Source:
 ```
 
 ## Design rules

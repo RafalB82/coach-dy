@@ -100,6 +100,6 @@
     "Do not invent quotes or details absent from source."
   ],
   "response_format": {
-    "template": "Obserwacja:\nInterpretacja:\nRekomendacja:\nMonitoruj:\nPonowna ocena:\nŹródło:"
+    "template": "Observation:\nInterpretation:\nRecommendation:\nMonitor:\nReassessment:\nSource:"
   }
 }

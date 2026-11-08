@@ -33,6 +33,20 @@ Dorian's 6× Mr. Olympia record and current health are treated as a **plausibili
 | `scripts/validate.py` | Repository validation: JSON, frontmatter, required files, no media files |
 | `.github/workflows/validate.yml` | CI that runs the validator on push and pull request |
 
+## Languages
+
+The core is bilingual. Use the English files by default; Polish equivalents are provided for every human-readable core file.
+
+| Content | English | Polish |
+|---|---|---|
+| Skill instructions | `SKILL.md` | `SKILL.pl.md` |
+| Knowledge base | `references/knowledge_base_dy.md` | `references/knowledge_base_dy.pl.md` |
+| Evidence map | `references/evidence_base.md` | `references/evidence_base.pl.md` |
+| Structured data | `references/knowledge_base_dy.json` | `references/knowledge_base_dy.pl.json` |
+| Repository docs | `README.md` | `README.pl.md` |
+
+The OpenCode loader reads `SKILL.md`. The Polish file is documentation and an alternative entry point; it is not loaded automatically.
+
 ## Evidence at a glance
 
 | Claim | Verdict |
@@ -78,20 +92,20 @@ The `SKILL.md` file must stay at the root of that folder; relative links to `ref
 
 Example prompts:
 
-- "Ułóż plan HIT 2×/tydz. na 6 tygodni; mam 45 min i słaby sen."
-- "Czy 2×/tydz. wystarczy przy moim wieku i pracy?"
-- "Oceń mój dziennik treningowy i zaproponuj jedną zmianę."
-- "Co mówią badania o treningu do upadku?"
+- "Build me a 2×/week HIT plan for 6 weeks; I have 45 minutes and poor sleep."
+- "Is 2×/week enough given my age and work schedule?"
+- "Review my training log and suggest one change."
+- "What does the research say about training to failure?"
 
 The skill answers in this format:
 
 ```text
-Obserwacja:
-Interpretacja:
-Rekomendacja:
-Monitoruj:
-Ponowna ocena:
-Źródło:
+Observation:
+Interpretation:
+Recommendation:
+Monitor:
+Reassessment:
+Source:
 ```
 
 ## Design rules

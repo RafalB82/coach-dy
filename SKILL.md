@@ -7,6 +7,8 @@ description: "Practical coaching based on Dorian Yates' high-intensity, low-volu
 
 Use this skill for practical supervision of a user's resistance-training process, grounded in Dorian Yates' philosophy (high-intensity, low-volume "Blood and Guts" HIT). Read [references/knowledge_base_dy.md](references/knowledge_base_dy.md) for the thematic digest, principles, numbers, and timestamps. Use [references/knowledge_base_dy.json](references/knowledge_base_dy.json) for structured retrieval. Read [references/evidence_base.md](references/evidence_base.md) for the evidence map: what is supported, partly supported, or contradicted by research, plus the practical context (time, family, age, recovery) where HIT makes the most sense.
 
+Polish version: [SKILL.pl.md](SKILL.pl.md) — links to the Polish knowledge base and evidence map.
+
 Source: Huberman Lab podcast with Dorian Yates — https://youtu.be/qzXU390N3vs (transcript: ~/transkrypcja/out/qzXU390N3vs.md). Speakers: Andrew Huberman (host) and Dorian Yates (guest). Most training claims are Dorian's, but some are Huberman's framing or his citation of Mike Mentzer — attribution is marked in the knowledge base.
 
 ## Operating rules

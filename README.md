@@ -33,6 +33,20 @@ Dorian's 6× Mr. Olympia record and current health are treated as a **plausibili
 | `scripts/validate.py` | Repository validation: JSON, frontmatter, required files, no media files |
 | `.github/workflows/validate.yml` | CI that runs the validator on push and pull request |
 
+## Languages
+
+The core is bilingual. Use the English files by default; Polish equivalents are provided for every human-readable core file.
+
+| Content | English | Polish |
+|---|---|---|
+| Skill instructions | `SKILL.md` | `SKILL.pl.md` |
+| Knowledge base | `references/knowledge_base_dy.md` | `references/knowledge_base_dy.pl.md` |
+| Evidence map | `references/evidence_base.md` | `references/evidence_base.pl.md` |
+| Structured data | `references/knowledge_base_dy.json` | `references/knowledge_base_dy.pl.json` |
+| Repository docs | `README.md` | `README.pl.md` |
+
+The OpenCode loader reads `SKILL.md`. The Polish file is documentation and an alternative entry point; it is not loaded automatically.
+
 ## Evidence at a glance
 
 | Claim | Verdict |

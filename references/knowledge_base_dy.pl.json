@@ -1,0 +1,105 @@
+{
+  "skill": "Coach-DY",
+  "language": "pl",
+  "source": {
+    "title": "Podcast Huberman Lab z Dorianem Yatesem",
+    "url": "https://youtu.be/qzXU390N3vs",
+    "transcript": "~/transkrypcja/out/qzXU390N3vs.md",
+    "speakers": ["Andrew Huberman (gospodarz)", "Dorian Yates (gość)"]
+  },
+  "evidence_base": "references/evidence_base.pl.md",
+  "evidence_summary": {
+    "supported": [
+      "2-3 min przerwy między seriami",
+      "2x/tydzień jako wystarczające minimum",
+      "progresywne przeciążenie",
+      "trening blisko upadku, zwłaszcza u zaawansowanych",
+      "6 min HIIT dla wydolności i zdrowia metabolicznego",
+      "około 1% utraty mięśni rocznie po 40. roku życia"
+    ],
+    "partly_supported": [
+      "niska objętość HIT jest skuteczna i czasowo wydajna, ale nie optymalna dla maksymalnej hipertrofii",
+      "1x/tydzień na grupę mięśniową działa, gdy objętość tygodniowa jest odpowiednia",
+      "deload jest bezpieczny, ale nie wyraźnie lepszy dla hipertrofii",
+      "dieta niskowęglowodanowa poprawia stłuszczenie wątroby, ale nie jest jedyną konieczną opcją"
+    ],
+    "not_supported_as_universal": [
+      "jedna seria do upadku jest optymalna dla każdego",
+      "niska objętość bije wyższą objętość",
+      "1 g białka/lb jest konieczne (plateau to około 1,6 g/kg)",
+      "6 min HIIT zastępuje 45 min cardio konkretnie pod kątem utraty tłuszczu"
+    ]
+  },
+  "contextual_optimization": {
+    "best_for": "Osoby z ograniczonym czasem (praca, dzieci, dom), ograniczoną regeneracją (słaby sen, stres, starszy wiek), początkujący/średniozaawansowani albo osoby stawiające zdrowie, siłę i adherencję ponad maksymalną hipertrofię. Niska objętość HIT 2x/tydzień jest często racjonalnym optimum przy tych ograniczeniach.",
+    "not_optimal_for": "Dobrze zregenerowani zaawansowani ćwiczący, których jedynym celem jest maksymalna hipertrofia. Dowody faworyzują stopniowo większą objętość (około 10-20 serii na mięsień tygodniowo, z malejącymi korzyściami i indywidualną tolerancją).",
+    "decision_rule": "Definiuj 'optymalne' przez cel + ograniczenia + regenerację, a nie przez uniwersalną regułę. Zacznij od HIT, jeśli czas/regeneracja są ograniczone; dodawaj objętość tylko wtedy, gdy regeneracja i wyniki na to pozwalają."
+  },
+  "n_of_1_caveat": "6x Mr. Olympia i obecne zdrowie Doriana w wieku 63-64 lat to mocny argument za wykonalnością, ale confounderami są genetyka, sterydy anaboliczne w karierze, dekady treningu, dieta, sen i survivorship bias. Jego obecny trening (1x upper / 1x lower, lekkie ciężary, Pilates, praca funkcjonalna) różni się od przygotowań do Olympii. Traktuj go jako case study i źródło zasad, nie jako dowód uniwersalnej optymalności.",
+  "principles": [
+    {"id": "P1", "title": "Stimulate, don't annihilate (parafraza)", "text": "Zrób wystarczająco, by pobudzić adaptację, nie więcej; przeciążenie wymaga regeneracji. Dosłownie w 00:00: 'do enough to stimulate, but not more than that'.", "source": "00:00, 09:51"},
+    {"id": "P2", "title": "Jedna seria do upadku po rozgrzewce", "text": "Celem jest prawdziwy upadek mięśniowy; druga seria tylko wtedy, gdy pierwsza nie 'siadła'.", "source": "00:00, 09:51"},
+    {"id": "P3", "title": "Progresywne przeciążenie", "text": "Nawet +0,5 funta (~0,25 kg) lub +1 powtórzenie względem poprzedniej sesji. Transkrypcja mówi 'half a pound'.", "source": "15:08"},
+    {"id": "P4", "title": "Pompa to nie wzrost", "text": "Pompa to przejściowy napływ krwi; wzrost wynika z przeciążenia + regeneracji.", "source": "15:08"},
+    {"id": "P5", "title": "Nie kopiuj mistrzów", "text": "Metody mistrzów (objętość, częstotliwość, wspomaganie) nie pasują do przeciętnego naturalnego ćwiczącego. Mentzer przez Hubermana: 'you're not Dorian Yates, so don't try to be'.", "source": "09:51, 1:20:06"},
+    {"id": "P6", "title": "Najpierw mind-muscle connection", "text": "Naucz się ruchu i czucia mięśnia, zanim zaczniesz pushować do upadku; zwłaszcza początkujący.", "source": "17:57"},
+    {"id": "P7", "title": "Forma przed upadkiem", "text": "Mózg próbuje oszukać ruch, gdy robi się ciężko; przejmij kontrolę nad tym instynktem.", "source": "17:57"},
+    {"id": "P8", "title": "Każda grupa mięśniowa bezpośrednio 1x/tydzień", "text": "Huberman cytuje Mike'a Mentzera; Dorian pośrednio potwierdza, opisując klienta, który ćwiczy wszystko raz w tygodniu. Uwaga na atrybucję.", "source": "21:16 (Huberman/Mentzer), 20:53"},
+    {"id": "P9", "title": "Przeciętna osoba: 8-10 ćwiczeń, 2x/tydzień, ~45 min", "text": "Pokrycie całego ciała, dwa razy w tygodniu, z dietą. To ogólna rekomendacja Doriana.", "source": "25:51"},
+    {"id": "P10", "title": "OUN regeneruje się niezależnie", "text": "Regeneracja OUN jest oddzielna od regeneracji mięśni; nogi do upadku to duży stres dla OUN.", "source": "21:47"},
+    {"id": "P11", "title": "5-6 tyg. mocno, potem 2 tyg. lżej", "text": "Periodyzacja sawtooth; nie pchaj się przez plateau.", "source": "15:08 (także 21:47, 24:40)"},
+    {"id": "P12", "title": "Deload około dwa razy w roku", "text": "Transkrypcja: 'a couple of times a year'; tydzień wolnego często czyni cię silniejszym.", "source": "16:35"},
+    {"id": "P13", "title": "Cardio: 6 min HIIT", "text": "3x20 s all-out na air bike ~ 45 min steady cardio.", "source": "25:51"},
+    {"id": "P14", "title": "Trening siłowy buduje mięśnie, cardio spala kalorie", "text": "Rozdziel te cele.", "source": "04:24"},
+    {"id": "P15", "title": "Najpierw maksymalnie naturalnie", "text": "Poznaj naturalne granice, zanim rozważysz cokolwiek innego.", "source": "50:30 (framing Hubermana 48:15)"},
+    {"id": "P16", "title": "Sterydy to karuzela", "text": "Trudno z niej zejść; po zejściu tracisz zyski i hormony; ryzyko zdrowia psychicznego; wielu rywali nie żyje.", "source": "50:30"},
+    {"id": "P17", "title": "Redukcja na niskich węglowodanach", "text": "Klient: cukrzyca + stłuszczenie wątroby odwrócone w miesiąc, -5/6 kg tłuszczu, 3x/tydzień full body.", "source": "19:30, 20:53"},
+    {"id": "P18", "title": "Praktyka ponad teorię", "text": "Jeśli coś nie działa w praktyce, nie ma znaczenia. Historia biopsji/MPS 48 h to doświadczenie Hubermana.", "source": "23:16, 24:39, 22:12"},
+    {"id": "P19", "title": "Prowadź dziennik treningowy", "text": "Zapisuj serie/powtórzenia/samopoczucie; miesięczny przegląd i cele.", "source": "35:56, 36:38"},
+    {"id": "P20", "title": "Użyj przeciwności jako paliwa", "text": "Dorian: weź złość i negatywne emocje i zamień je w coś pozytywnego.", "source": "1:04:10 (framing 00:50, 28:52)"}
+  ],
+  "numbers": [
+    {"value": "45 min x 2/tydzień", "context": "wystarczy przeciętnej osobie z dietą", "source": "25:51"},
+    {"value": "8-10 ćwiczeń", "context": "pokrycie całego ciała, 2x/tydzień", "source": "25:51"},
+    {"value": "6 min HIIT", "context": "3x20 s all-out ~ 45 min steady cardio", "source": "25:51"},
+    {"value": "5-6 tyg. mocno + 2 tyg. lżej", "context": "periodyzacja", "source": "15:08 (także 21:47, 24:40)"},
+    {"value": "około 2 tyg. wolne/rok", "context": "deload, 'a couple of times a year'", "source": "16:35"},
+    {"value": "2-3 min przerwy", "context": "między seriami", "source": "04:24"},
+    {"value": "180->210 lbs", "context": "naturalnie, ~1,5 roku (Dorian)", "source": "44:24"},
+    {"value": "+20 lbs (210->230) w 6 tyg.", "context": "na 20 mg/d Dianabolu ('D-ball'; transkrypcja 'debar'), nie deca", "source": "44:24"},
+    {"value": "125 mg/tydzień TRT", "context": "Huberman zaczął w wieku 45 lat; Dorian 'on par, the same'", "source": "blok 39:21"},
+    {"value": "-5/6 kg tłuszczu w 1 miesiąc", "context": "klient, niskowęglowodanowa dieta + 3x/tydzień", "source": "20:53"},
+    {"value": "1% mięśni/rok po 40.", "context": "bez treningu", "source": "25:51"},
+    {"value": "7 lat", "context": "od startu do pro (Dorian)", "source": "38:11"}
+  ],
+  "evidence_map": [
+    {"claim": "2-3 min przerwy między seriami", "verdict": "supported", "evidence": "Schoenfeld 2016 (PMID 26605807): 3 min > 1 min dla siły i hipertrofii u zaawansowanych."},
+    {"claim": "2x/tydzień wystarczy przeciętnej osobie", "verdict": "supported_as_minimum", "evidence": "Schoenfeld 2016 (PMID 27102172): 2x > 1x przy równej objętości; Schoenfeld 2019 (PMID 30558493): częstotliwość 1-3x neutralna przy równej objętości."},
+    {"claim": "Trening do upadku / blisko upadku", "verdict": "partly_supported", "evidence": "Grgic 2021 (PMID 33497853): brak ogólnej różnicy, mała przewaga dla hipertrofii u zaawansowanych; Robinson 2024 (PMID 38970765): hipertrofia rośnie bliżej upadku."},
+    {"claim": "Jedna seria do upadku jest optymalna", "verdict": "not_supported", "evidence": "Krieger 2010 (PMID 20300012): wiele serii +40% ES hipertrofii vs jedna seria; Schoenfeld 2017 (PMID 27433992): więcej serii tygodniowo daje więcej hipertrofii."},
+    {"claim": "Niska objętość HIT wystarcza", "verdict": "partly_supported", "evidence": "Giessing 2016 (PMID 27601778): HIT 2x/tydzień dał większą siłę w 3/9 ćwiczeń i podobny skład ciała, przy sesjach ~10,5 min vs 24-27 min."},
+    {"claim": "Progresywne przeciążenie", "verdict": "supported", "evidence": "Fundamentalna zasada w literaturze treningu siłowego."},
+    {"claim": "5-6 tyg. mocno + 2 tyg. lżej", "verdict": "partly_supported", "evidence": "Moesgaard 2022 (PMID 35044672): periodyzacja poprawia siłę, ale nie hipertrofię przy równej objętości; Coleman 2024 (DOI 10.7717/peerj.16777): deload nie szkodzi hipertrofii, ale może obniżyć przyrost siły."},
+    {"claim": "Każda grupa 1x/tydzień", "verdict": "partly_supported", "evidence": "Schoenfeld 2019 (PMID 30558493): częstotliwość nie wpływa istotnie na hipertrofię przy równej objętości."},
+    {"claim": "Sesje 45 min wystarczają", "verdict": "supported_for_health", "evidence": "Giessing 2016 (PMID 27601778); ogólne wytyczne aktywności fizycznej. Wystarczające dla zdrowia i siły, nie sufit dla maksymalnej hipertrofii."},
+    {"claim": "6 min HIIT równa się 45 min steady cardio", "verdict": "supported_for_cardiometabolic_health", "evidence": "Gillen 2016 (DOI 10.1371/journal.pone.0154075): 3x20 s all-out, 3x/tydzień, sesja 10 min vs 45 min MICT, 12 tygodni: podobny VO2peak, insulinooporność i zawartość mitochondriów."},
+    {"claim": "1 g/lb białka jest konieczne", "verdict": "not_supported", "evidence": "Morton 2018 (PMID 28698222): plateau przy ~1,62 g/kg/dzień (~0,73 g/lb)."},
+    {"claim": "Około 1% utraty mięśni rocznie po 40.", "verdict": "supported", "evidence": "Przeglądy sarcopenii: ~1%/rok od średniego wieku; 3-8% na dekadę po 40."}
+  ],
+  "boundaries": [
+    "Jedno źródło podcastowe (Huberman x Yates). Brak szczegółowej techniki ćwiczeń, zaawansowanego programowania poza HIT, rehabilitacji, ciąży, leczenia chorób.",
+    "Nie diagnozuj urazów/chorób. Ból/uraz/sygnały alarmowe eskaluj do specjalisty.",
+    "Nigdy nie zalecaj dopingu/leków/niebezpiecznie szybkiej utraty wagi.",
+    "Przypisuj twierdzenia Dorianowi Yatesowi tylko wtedy, gdy transkrypcja to wspiera; podawaj timestampy.",
+    "Część zasad to twierdzenia Hubermana lub jego cytat Mike'a Mentzera, nie Doriana: częstotliwość 1x/tydzień (21:16), historia MPS 48 h/biopsji (22:12).",
+    "Białko 1 g/lb pochodzi z reklamy sponsora (12:02), nie z porady trenerskiej Doriana; nie przedstawiaj tego jako jego rekomendacji.",
+    "'Stimulate, don't annihilate' to parafraza; transkrypcja mówi 'do enough to stimulate, but not more than that'.",
+    "Niska objętość HIT jest skuteczna i czasowo wydajna, ale nie optymalna dla maksymalnej hipertrofii; większa objętość zwykle daje więcej hipertrofii z malejącymi korzyściami.",
+    "6x Mr. Olympia i obecne zdrowie Doriana to dowód z przypadku n=1, nie dowód uniwersalnej optymalności; genetyka, sterydy, historia treningu i survivorship bias są confounderami.",
+    "Optymalne zależy od ograniczeń: osoby z małą ilością czasu/ograniczoną regeneracją mogą najlepiej działać na HIT 2x/tydzień; dobrze zregenerowani zaawansowani ćwiczący dążący do maksymalnej hipertrofii mogą potrzebować większej objętości.",
+    "Nie wymyślaj cytatów ani szczegółów nieobecnych w źródle."
+  ],
+  "response_format": {
+    "template": "Obserwacja:\nInterpretacja:\nRekomendacja:\nMonitoruj:\nPonowna ocena:\nŹródło:"
+  }
+}

@@ -13,7 +13,7 @@ All notable changes to this repository.
   `references/knowledge_base_dy.pl.json` — Polish core files.
 - Language table in both READMEs.
 - `repo-about.json` — versioned GitHub About metadata (description, homepage,
-  topics).
+  topics); the description now states that the skill is bilingual (EN/PL).
 - `scripts/set_repo_about.py` — validates and applies the About metadata with
   `gh api`; supports `--dry-run`.
 - `make about` / `make about-dry` shortcuts.

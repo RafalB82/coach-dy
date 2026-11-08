@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Audio / transcripts (never commit these)
+audio/
+transcripts/
+out/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.clean.wav
+
+# Local environment
+.env
+.env.*
+!.env.example

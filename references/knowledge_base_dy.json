@@ -1,0 +1,104 @@
+{
+  "skill": "Coach-DY",
+  "source": {
+    "title": "Huberman Lab Podcast with Dorian Yates",
+    "url": "https://youtu.be/qzXU390N3vs",
+    "transcript": "~/transkrypcja/out/qzXU390N3vs.md",
+    "speakers": ["Andrew Huberman (host)", "Dorian Yates (guest)"]
+  },
+  "evidence_base": "references/evidence_base.md",
+  "evidence_summary": {
+    "supported": [
+      "2-3 min rest between sets",
+      "2x/week as a sufficient minimum",
+      "progressive overload",
+      "training close to failure, especially for trained lifters",
+      "6 min HIIT for cardiometabolic fitness",
+      "about 1% muscle loss per year after 40"
+    ],
+    "partly_supported": [
+      "low-volume HIT is effective and time-efficient but not optimal for maximal hypertrophy",
+      "1x/week per muscle can work when weekly volume is adequate",
+      "deloads are safe but not clearly superior for hypertrophy",
+      "low-carb diet improves fatty liver but is not uniquely required"
+    ],
+    "not_supported_as_universal": [
+      "one set to failure is optimal for everyone",
+      "low volume beats higher volume",
+      "1 g/lb protein is necessary (plateau is about 1.6 g/kg)",
+      "6 min HIIT replaces 45 min cardio for fat loss specifically"
+    ]
+  },
+  "contextual_optimization": {
+    "best_for": "People with limited time (work, children, home), limited recovery (poor sleep, stress, older age), beginners/intermediates, or those prioritizing health, strength and adherence over maximal hypertrophy. Low-volume HIT 2x/week is often the rational optimum under these constraints.",
+    "not_optimal_for": "Well-recovered advanced trainees whose only goal is maximal hypertrophy. Evidence favors progressively higher volume (roughly 10-20 sets per muscle per week, with diminishing returns and individual tolerance).",
+    "decision_rule": "Define 'optimal' by goal + constraints + recovery, not by a universal rule. Start with HIT if time/recovery are limited; add volume only when recovery and results allow."
+  },
+  "n_of_1_caveat": "Dorian's 6x Mr. Olympia status and current health at 63-64 are a strong plausibility case, but confounded by genetics, anabolic steroid use during his career, decades of training, diet, sleep and survivorship bias. His current training (1x upper / 1x lower, light weights, Pilates, functional work) differs from his Olympia preparation. Use him as a case study and source of principles, not proof of universal optimality.",
+  "principles": [
+    {"id": "P1", "title": "Stimulate, don't annihilate (paraphrase)", "text": "Do enough to stimulate adaptation, not more; overload must be recovered from. Verbatim at 00:00: 'do enough to stimulate, but not more than that'.", "source": "00:00, 09:51"},
+    {"id": "P2", "title": "One set to failure after warm-ups", "text": "Goal is true muscular failure; second set only if first didn't land.", "source": "00:00, 09:51"},
+    {"id": "P3", "title": "Progressive overload", "text": "Even +0.5 lb (~0.25 kg) or +1 rep vs previous session. Transcript says 'half a pound'.", "source": "15:08"},
+    {"id": "P4", "title": "Pump is not growth", "text": "Pump is transient blood flow; growth comes from overload + recovery.", "source": "15:08"},
+    {"id": "P5", "title": "Don't copy champions", "text": "Champion methods (volume, frequency, gear) don't fit a natural average trainee. Mentzer via Huberman: 'you're not Dorian Yates, so don't try to be'.", "source": "09:51, 1:20:06"},
+    {"id": "P6", "title": "Mind-muscle connection first", "text": "Learn movement and feel before pushing to failure; especially beginners.", "source": "17:57"},
+    {"id": "P7", "title": "Form before failure", "text": "Brain tries to cheat the movement when it gets hard; override the instinct.", "source": "17:57"},
+    {"id": "P8", "title": "Each muscle directly 1x/week", "text": "Huberman citing Mike Mentzer; Dorian indirectly confirms with a client hitting everything once a week. Note attribution.", "source": "21:16 (Huberman/Mentzer), 20:53"},
+    {"id": "P9", "title": "Average person: 8-10 exercises, 2x/week, ~45 min", "text": "Whole-body coverage, twice weekly, with diet. This is Dorian's general recommendation.", "source": "25:51"},
+    {"id": "P10", "title": "Nervous system recovers independently", "text": "CNS recovery is separate from muscle recovery; legs to failure are a big CNS stress.", "source": "21:47"},
+    {"id": "P11", "title": "Hard 5-6 weeks then 2 weeks light", "text": "Sawtooth periodization; don't push through plateau.", "source": "15:08 (also 21:47, 24:40)"},
+    {"id": "P12", "title": "Deload about twice a year", "text": "Transcript: 'a couple of times a year'; a week off often makes you stronger.", "source": "16:35"},
+    {"id": "P13", "title": "Cardio: 6 min HIIT", "text": "3x20s all-out on air bike ~ 45 min steady cardio.", "source": "25:51"},
+    {"id": "P14", "title": "Weights build muscle, cardio burns calories", "text": "Separate these goals.", "source": "04:24"},
+    {"id": "P15", "title": "Get far naturally first", "text": "Explore natural limits before considering anything else.", "source": "50:30 (Huberman's framing 48:15)"},
+    {"id": "P16", "title": "Steroids are a merry-go-round", "text": "Hard to exit; lose gains and hormones when off; mental health risks; many competitors are dead.", "source": "50:30"},
+    {"id": "P17", "title": "Low-carb fat loss", "text": "Client: diabetes + fatty liver reversed in 1 month, -5/6 kg fat, 3x/week full body.", "source": "19:30, 20:53"},
+    {"id": "P18", "title": "Practice over theory", "text": "If it doesn't work in practice, it doesn't matter. The 48h MPS/biopsy story is Huberman's own experience.", "source": "23:16, 24:39, 22:12"},
+    {"id": "P19", "title": "Keep a training log", "text": "Log sets/reps/feel; monthly review and goals.", "source": "35:56, 36:38"},
+    {"id": "P20", "title": "Use adversity as fuel", "text": "Dorian: take anger and negative emotions and change them into something positive.", "source": "1:04:10 (framing 00:50, 28:52)"}
+  ],
+  "numbers": [
+    {"value": "45 min x 2/week", "context": "enough for average person with diet", "source": "25:51"},
+    {"value": "8-10 exercises", "context": "whole-body coverage, 2x/week", "source": "25:51"},
+    {"value": "6 min HIIT", "context": "3x20s all-out ~ 45 min steady cardio", "source": "25:51"},
+    {"value": "5-6 weeks hard + 2 weeks light", "context": "periodization", "source": "15:08 (also 21:47, 24:40)"},
+    {"value": "about 2 weeks off/year", "context": "deload, 'a couple of times a year'", "source": "16:35"},
+    {"value": "2-3 min rest", "context": "between sets", "source": "04:24"},
+    {"value": "180->210 lbs", "context": "natural, ~1.5 years (Dorian)", "source": "44:24"},
+    {"value": "+20 lbs (210->230) in 6 weeks", "context": "on 20 mg/day Dianabol ('D-ball'; transcript 'debar'), not deca", "source": "44:24"},
+    {"value": "125 mg/week TRT", "context": "Huberman started at 45; Dorian 'on par, the same'", "source": "39:21 block"},
+    {"value": "-5/6 kg fat in 1 month", "context": "client, low-carb + 3x/week", "source": "20:53"},
+    {"value": "1% muscle/year lost after 40", "context": "without training", "source": "25:51"},
+    {"value": "7 years", "context": "from start to pro (Dorian)", "source": "38:11"}
+  ],
+  "evidence_map": [
+    {"claim": "2-3 min rest between sets", "verdict": "supported", "evidence": "Schoenfeld 2016 (PMID 26605807): 3 min > 1 min for strength and hypertrophy in resistance-trained men."},
+    {"claim": "2x/week is enough for the average person", "verdict": "supported_as_minimum", "evidence": "Schoenfeld 2016 (PMID 27102172): 2x > 1x at equal volume; Schoenfeld 2019 (PMID 30558493): frequency 1-3x neutral when volume is equated."},
+    {"claim": "Train to failure / close to failure", "verdict": "partly_supported", "evidence": "Grgic 2021 (PMID 33497853): no overall difference, small hypertrophy advantage in trained lifters; Robinson 2024 (PMID 38970765): hypertrophy increases closer to failure."},
+    {"claim": "One set to failure is optimal", "verdict": "not_supported", "evidence": "Krieger 2010 (PMID 20300012): multiple sets +40% hypertrophy ES vs one set; Schoenfeld 2017 (PMID 27433992): more weekly sets produce more hypertrophy."},
+    {"claim": "Low-volume HIT is sufficient", "verdict": "partly_supported", "evidence": "Giessing 2016 (PMID 27601778): HIT 2x/week produced greater strength in 3/9 exercises and similar body composition, with ~10.5 min sessions vs 24-27 min."},
+    {"claim": "Progressive overload", "verdict": "supported", "evidence": "Fundamental principle across resistance-training literature."},
+    {"claim": "5-6 weeks hard + 2 weeks light", "verdict": "partly_supported", "evidence": "Moesgaard 2022 (PMID 35044672): periodization improves strength but not hypertrophy when volume is equated; Coleman 2024 (DOI 10.7717/peerj.16777): deload does not harm hypertrophy but may reduce strength gains."},
+    {"claim": "Each muscle 1x/week", "verdict": "partly_supported", "evidence": "Schoenfeld 2019 (PMID 30558493): frequency does not meaningfully affect hypertrophy when volume is equated."},
+    {"claim": "45 min sessions are enough", "verdict": "supported_for_health", "evidence": "Giessing 2016 (PMID 27601778); general physical-activity guidelines. Enough for health and strength, not a ceiling for maximal hypertrophy."},
+    {"claim": "6 min HIIT equals 45 min steady cardio", "verdict": "supported_for_cardiometabolic_health", "evidence": "Gillen 2016 (DOI 10.1371/journal.pone.0154075): 3x20s all-out, 3x/week, 10-min session vs 45-min MICT, 12 weeks: similar VO2peak, insulin sensitivity and mitochondrial content."},
+    {"claim": "1 g/lb protein is necessary", "verdict": "not_supported", "evidence": "Morton 2018 (PMID 28698222): plateau at ~1.62 g/kg/day (~0.73 g/lb)."},
+    {"claim": "About 1% muscle loss per year after 40", "verdict": "supported", "evidence": "Sarcopenia reviews: ~1%/year from middle age; 3-8% per decade after 40."}
+  ],
+  "boundaries": [
+    "Single podcast source (Huberman x Yates). No exercise technique detail, no advanced programming beyond HIT, no rehab, no pregnancy, no disease management.",
+    "Do not diagnose injury/disease. Escalate pain/injury/red flags to clinician.",
+    "Never recommend doping/medication/unsafe rapid weight loss.",
+    "Attribute claims to Dorian Yates only when transcript supports; cite timestamps.",
+    "Some principles are Huberman's statements or his citation of Mike Mentzer, not Dorian's: 1x/week frequency (21:16), MPS 48h/biopsy story (22:12).",
+    "Protein 1 g/lb comes from a sponsor ad read (12:02), not Dorian's coaching advice; do not present it as his recommendation.",
+    "'Stimulate, don't annihilate' is a paraphrase; the transcript says 'do enough to stimulate, but not more than that'.",
+    "Low-volume HIT is effective and time-efficient but not optimal for maximal hypertrophy; higher volume generally produces more hypertrophy with diminishing returns.",
+    "Dorian's 6x Mr. Olympia status and current health are n=1 plausibility evidence, not proof of universal optimality; genetics, steroids, training history and survivorship bias are confounders.",
+    "Optimal depends on constraints: time-poor/recovery-limited people may do best with HIT 2x/week; well-recovered advanced trainees seeking maximal hypertrophy may need more volume.",
+    "Do not invent quotes or details absent from source."
+  ],
+  "response_format": {
+    "template": "Obserwacja:\nInterpretacja:\nRekomendacja:\nMonitoruj:\nPonowna ocena:\nŹródło:"
+  }
+}
